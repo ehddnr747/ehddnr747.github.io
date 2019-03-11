@@ -1,0 +1,17 @@
+title:             Donguk's Blog
+email:             ehddnr747@gmail.com
+description:       Donguk's Blog, I usually upload what I study.
+author:            Donguk Ju
+baseurl:           ""
+url:               "http://ehddnr747.github.io"
+
+# Social Profiles
+github_username:  ehddnr747
+
+# Build settings
+markdown:          kramdown
+paginate:          5
+paginate_path:     "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
