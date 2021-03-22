@@ -1,2 +1,1 @@
-# red-donguk
-Web CV of Donguk Ju
+This is source codes for Donguk Ju's Web Page.

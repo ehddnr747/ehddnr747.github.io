@@ -1,0 +1,193 @@
+</<!DOCTYPE html>
+<!-- 1em = 3vw -->
+<html lang="en" dir="ltr">
+<head>
+  <title>Donguk Red</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+  /* 폰트 사이즈 맞추기. 전체화면에서 너무 커보이지 않으면서도 밑에 커리어 에듀케이션에서 너무 작아보이지 않게 적당히 잘 해보기. */
+  body{
+    width: 1024px;
+    margin: auto;
+  }
+  h1{
+    margin-top: 5%;
+    margin-bottom: 0px;
+    text-align:center;
+    font-size: min(6vw, calc(0.6*61.44px));
+  }
+  p{
+    margin: min(2vw, 16px);
+    text-align: justify;
+    hyphens: auto;
+    font-size: min(3vw, calc(0.6*30.72px));
+  }
+  br{
+    display: block;
+    content: "";
+    margin-top: 5px;
+  }
+  h2{
+    border-bottom: 3px solid black;
+    margin-bottom: min(2vw, 16px);
+    font-size: min(4vw, calc(0.6*40.96px));
+  }
+  h3{
+    font-weight: normal;
+    font-size: min(3.5vw, calc(0.6*35.84px));
+
+  }
+  address{
+    display: inline;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 1fr 40%;
+    margin-bottom: min(1vw, 8px);
+  }
+  #contents_grid{
+    display: grid;
+    grid-template-columns: 1fr 20%;
+    margin-bottom: min(1vw, 8px);
+    padding: min(1vw, 8px);
+  }
+  #lastUpdate{
+    text-align: right;
+    margin: min(1vw, 8px) 0 min(2vw, 16px) 0;
+    padding-bottom: min(0.5vw, 4px);
+    padding-right: min(1vw, 8px);
+    border-bottom: 3px solid black;
+  }
+  #profileImage{
+
+  }
+  div.contact{
+    margin: min(2vw, 16px);
+    margin-top: 0px;
+    font-size: min(3vw, calc(0.6*30.72px));
+  }
+  #grid > div{
+    margin: auto;
+  }
+  div > h3{
+    text-align: justify;
+    hyphens: auto;
+    padding: min(2vw, 16px);
+    margin: 0px;
+  }
+  #contents_grid p{
+    margin: 0;
+    padding-right: min(2.5vw, 20px);
+  }
+  p.program{
+    font-weight: bold;
+  }
+  p.organization{
+    font-style: italic;
+    padding-left: min(2.5vw, 20px);
+  }
+  p.detail{
+    padding-left: min(5vw, 40px);
+    font-size: min(2.5vw, calc(0.6*25.6px));
+  }
+  #contents_grid p.period{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 0em 0.5em 0em 0.5em;
+    font-size: min(2.5vw, calc(0.6*25.6px));
+  }
+  @media(max-width:1024px){
+    body{
+      width: 100vw;
+    }
+    #whole{
+      padding: 2vw;
+    }
+  }
+  @media(max-width:600px){
+    #grid{
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto auto;
+    }
+  }
+
+  </style>
+  <script type="text/javascript">
+  var x = new Date(document.lastModified);
+  var lastUpdateDate = "Last Update: " + String(x.getFullYear()) + "/"
+  + ("0" + String(x.getMonth()+1)).slice(-2) + "/"
+  + ("0" + String(x.getDate())).slice(-2);
+  </script>
+</head>
+
+<body>
+  <div id="whole">
+  <h1>Donguk Ju (Red)</h1>
+  <p id=lastUpdate></p>
+  <script type="text/javascript">
+  document.getElementById("lastUpdate").innerHTML = lastUpdateDate;
+  </script>
+  <!-- Headline -->
+  <div id="grid">
+    <div>
+      <h3>
+        <strong>Machine Learning Engineer<br>specialized in reinforcement learning</strong><br>at Samsung Research, Samsung Electronics, Seoul
+      </h3>
+      <div class="contact">
+        <b>contact:</b> <address class=""><a href="mailto:ehddnr747@naver.com">ehddnr747@naver.com</a></address>
+      </div>
+    </div>
+    <div class=>
+      <img src="images/profile.jpg" width="100%" id=profileImage>
+      <script type="text/javascript">
+      var img = document.querySelector("#profileImage");
+      var currWidth = img.clientWidth;
+      var currHeight = img.clientHeight;
+      </script>
+    </div>
+  </div>
+  <p>
+    Hello! This is <strong>Donguk Ju (Red)</strong>. I am currently working for <strong>Samsung Research, Samsung Electronics</strong>, Seoul, South Korea. <br>
+    I have been working as a <strong>data scientist and reinforcement learning (RL) researcher</strong> since 2017. <br>
+    My research interest is mainly in <strong>reinforcement learning</strong>, <strong>machine learning</strong>, <strong>vision based control</strong> and, especially, <strong>learning efficient representations for RL</strong>. <br>
+    Here, you can find <strong>my previous projects and their demos</strong>. If you find anything interesting, feel free to contact me. <br>
+  </p>
+  <h2> Education & Career </h2>
+  <div id="contents_grid">
+    <div class="">
+      <p class="program">International Exchange Student</p> <br>
+      <p class="organization">The State University of New York at Stony Brook<p> <br>
+      <p class="detail">Intensive English Course(Summer), Regular Course(Fall)<p><br>
+    </div>
+    <div class="">
+      <p class="period">13.07 - 13.12</p>
+    </div>
+  </div>
+  <div id="contents_grid">
+    <div class="">
+      <p class="program">B.E. Creative IT Engineering</p> <br>
+      <p class="organization">Pohang University of Science and Technology<p> <br>
+      <p class="detail">Magna Cum Laude<p><br>
+    </div>
+    <div class="">
+      <p class="period">13.03 - 20.02</p>
+    </div>
+  </div>
+  <div id="contents_grid">
+    <div class="">
+      <p class="program">High School</p> <br>
+      <p class="organization">Gyeong-Nam Science High School<p> <br>
+    </div>
+    <div class="">
+      <p class="period">11.03 - 13.02</p>
+    </div>
+  </div>
+  <h2> Projects </h2>
+  <h2> Awards </h2>
+  <!--장학금 -->
+</div>
+</body>
+</html>
